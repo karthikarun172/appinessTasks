@@ -7,7 +7,7 @@ import { Input, PasswordInput } from "../../Components/inputs";
 import { KeyboardAwareScrollView } from "react-native-keyboard-aware-scroll-view";
 import { Colors } from "../../Utils/Colors";
 import { Context as RegisterContext } from "../../Context/DataContext";
-
+// this is Sign Up
 const SignOut = ({ navigation }) => {
   const { state, Register, locatSignIn, clearErrorMessage } = useContext(
     RegisterContext
