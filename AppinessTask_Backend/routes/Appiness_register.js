@@ -9,7 +9,7 @@ const {
 } = require("../models/Appiness_register");
 const auth = require("../middleware/auth");
 
-router.get("/", async (req, res) => {
+router.get("/",auth ,async (req, res) => {
   let appiness_register = await AppinessRegister.find().select("-password");
   res.send(appiness_register);
 });
